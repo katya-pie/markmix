@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Digital Mixtape</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="letter-overlay" class="letter-overlay">
+        <div class="letter">
+            <button class="close-btn" onclick="closeLetter()">&times;</button>
+            <div class="letter-content">
+                <h1>For You...</h1>
+                <p>Dear friend,</p>
+                <p>I made this mixtape just for you. Each song has been carefully selected to share moments, memories, and feelings.</p>
+                <p>Press "Open" to discover the tracks I've chosen.</p>
+                <p>With love,<br>Your friend</p>
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <h1 class="title">Digital Mixtape</h1>
+        <div class="cassette-container">
+            <img src="cassette.svg" alt="Cassette Tape" class="cassette-image">
+        </div>
+        <button class="open-btn" onclick="openMixtape()">Open</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
