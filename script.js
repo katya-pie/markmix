@@ -8,7 +8,7 @@ function closeLetter() {
 
 // Function to navigate to the tracks page
 function openMixtape() {
-    window.location.href = 'tracks.html';
+    window.location.href = 'tracks2.html';
 }
 
 // Close letter when clicking outside of it

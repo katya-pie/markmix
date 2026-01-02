@@ -5,27 +5,38 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Digital Mixtape</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Homemade+Apple&family=Miss+Fajardose&family=Monsieur+La+Doulaise&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Special+Elite&display=swap" rel="stylesheet">      
 </head>
 <body>
     <div id="letter-overlay" class="letter-overlay">
         <div class="letter">
             <button class="close-btn" onclick="closeLetter()">&times;</button>
             <div class="letter-content">
-                <h1>For You...</h1>
-                <p>Dear friend,</p>
-                <p>I made this mixtape just for you. Each song has been carefully selected to share moments, memories, and feelings.</p>
-                <p>Press "Open" to discover the tracks I've chosen.</p>
-                <p>With love,<br>Your friend</p>
+                <p>Dear Mark,</p>
+                <p>Love has so many different dimensions and I feel so grateful that I met someone who makes me see love with such richness. <br>
+                    I miss you dearly. <br>
+                    Love with you felt like the most exciting adventure. <br>
+                    Like a gem that shines so many different beautiful colors as you rotate it. <br>
+                    Like Thai food. <br>
+                    Like a rainbow 🌈 <br>
+                    Like this video https://youtu.be/Gi4fH8LG9dY?si=rkpKbZTYp6039C78 <br>
+                    Like this playlist. <br>
+                </p>
+                <p>- Katya</p>
             </div>
         </div>
     </div>
 
     <div class="container">
-        <h1 class="title">Digital Mixtape</h1>
-        <div class="cassette-container">
-            <img src="cassette.svg" alt="Cassette Tape" class="cassette-image">
+        <div class="click-here-text">
+            <p>click here</p>
+            <div class="arrow">↓</div>
         </div>
-        <button class="open-btn" onclick="openMixtape()">Open</button>
+        <div class="cassette-container" onclick="openMixtape()">
+            <img src="Mark-2.png" alt="Cassette Tape" class="cassette-image" style="border-radius: 15px;">
+        </div>
     </div>
 
     <script src="script.js"></script>
