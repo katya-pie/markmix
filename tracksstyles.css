@@ -50,7 +50,7 @@ figure.track-row {
     margin-bottom: -0.375em; /* Adjusted for line height */
     font-size: 20px;
     position: relative;
-    background: #d3d0b8;
+    background:#EDE7D7;
     background-image: repeating-linear-gradient(
         rgba(0, 0, 0, 0.12) 0 1px,
         transparent 0 1.5em
