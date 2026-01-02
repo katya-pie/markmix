@@ -3,11 +3,10 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-  }
-  
-  /* Body Styles */
-  body {
-    padding: 4em;
+}
+
+/* Body Styles */
+body {
     font-family: "Homemade Apple", cursive;
     font-style: normal;
     background: #F96A5C;
@@ -18,41 +17,49 @@
     align-items: center;
     justify-content: center;
     scroll-behavior: smooth;
-  }
+    padding-bottom: 5em;
+}
 
-  /* Track Rows (Paper Effect) */
-  figure.track-row {
+.page-title {
+    font-size: 3em;
+    color: #ffffff;
+    margin-top: 1.5em;
+}
+
+/* Track Container */
+.track-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: 2.5em;
+  background: none;
+  border: none;
+  padding: 1em;
+  width: 80%;
+  margin: 3em;
+}
+
+/* Track Rows (Paper Effect) */
+figure.track-row {
+    flex: 1;
     line-height: 1.5;
     color: #663c5b;
-    width: 650px;
+    width: 100%;
     padding: 1.5em;
     margin-bottom: -0.375em; /* Adjusted for line height */
     font-size: 20px;
     position: relative;
-  }
-  
-  figure.track-row + figure.track-row {
-    margin-top: 2em;
-  }
-  
-  figure.track-row::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    bottom: 0;
-    right: 0;
-    z-index: -1;
-    box-shadow: 10px 8px 6px 5px rgba(0, 0, 0, 0.05);
-    background-color:#EDE7D7;
-    background-image: repeating-linear-gradient(rgba(0, 0, 0, 0.12) 0 1px, transparent 0 1.5em);
+    background: #d3d0b8;
+    background-image: repeating-linear-gradient(
+        rgba(0, 0, 0, 0.12) 0 1px,
+        transparent 0 1.5em
+    );
     background-origin: content-box;
+    box-shadow: 10px 8px 6px 5px rgba(0, 0, 0, 0.05);
     transform: translateY(-0.375em);
-  }
-  
-  /* Caption Styles */
-  figcaption {
-    text-align: right;
-    font-size: 20px;
-    color: #663c5b;
-  }
+}
+
+figure.track-row + figure.track-row {
+    margin-top: 2em;
+}
